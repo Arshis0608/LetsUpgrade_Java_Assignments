@@ -1,0 +1,44 @@
+<!DOCTYPE HTML> 
+<html> 
+  
+<head> 
+    <title> 
+        JavaScript  
+      | How to get current formatted date dd/mm/yyyy. 
+    </title> 
+</head> 
+  
+<body style="text-align:center;"
+      id="body"> 
+    <h1 style="color:black;">   
+            Current Date  
+        </h1> 
+    <p id="GFG_UP" 
+       style="font-size: 15px; 
+              font-weight: italics;"> 
+    </p> 
+    <button onclick="gfg_Run()"> 
+        get New Date 
+    </button> 
+    <p id="GFG_DOWN"
+       style="color:black;  
+              font-size: 20px;  
+              font-weight: bold;"> 
+    </p> 
+    <script> 
+        var el_up = document.getElementById("GFG_UP"); 
+        var el_down = document.getElementById("GFG_DOWN"); 
+        var today = new Date(); 
+        el_up.innerHTML = today; 
+  
+        function gfg_Run() { 
+            var date = today.toJSON().slice(0, 10); 
+            var nDate = date.slice(8, 10) + '/'  
+                       + date.slice(5, 7) + '/'  
+                       + date.slice(0, 4); 
+            el_down.innerHTML = nDate; 
+        } 
+    </script> 
+</body> 
+  
+</html> 
