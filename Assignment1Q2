@@ -1,0 +1,8 @@
+<html>
+<head>
+<h1> Assignemnt 1 Question 2 </h1>
+<body>
+<button onclick="window.print()">Print This page</button>
+</body>
+</head>
+</html>
