@@ -1,0 +1,86 @@
+<!-- Answer 1 -->
+
+// A console command is used to get data in the console box of the web browser
+
+// 1) console.log() method - Used to add in data 
+console.log('abc'); 
+console.log(null); 
+
+console.log([1, 2, 3, 4]); 
+console.log({a:1, b:2, c:3});
+
+// 2) console.error() / console.warn method - Used to popup an error messege in console or give a amber level alert in the system 
+console.error('This is a simple error'); 
+console.warn('This is a warning.'); 
+
+// 3) console.clear() method - Used to clear the console 
+console.clear(); 
+
+// 4) console.time() and console.timeEnd() method - Used to understand the time spent by a function in the programe. 
+console.time('abc'); 
+let A = function(){ 
+	console.log('A is on'); 
+} 
+let B = function(){ 
+	console.log('B is on'); 
+} 
+A(); // calling A(); 
+B(); // calling B(); 
+console.timeEnd('abc'); 
+
+// 5) console.group() and console.groupEnd() method - Used to group data together 
+console.group('group'); 
+console.warn('warning!'); 
+console.error('e'); 
+console.log('HI'); 
+console.groupEnd('GE'); 
+console.log('Bye'); 
+
+
+// 6) console.table() method - Showcases data in form of tables 
+console.table({'a':1, 'b':2}); 
+
+// 7) console.count() method - Used to count the fucntion 
+for(let z=0;z<7;z++){ 
+	console.count(z); 
+} 
+
+
+<!-- Answer 2 -->
+
+// Var- The variable is universally defined by the var function. Any other variable thats not defined by the Var fucntion falls outside its scope.
+
+let greeting = "Hi";
+let times = 4;
+
+if (times > 3) {
+     let hello = "Hey";
+     console.log(hello);// "Hey"
+ }
+console.log(hello) // hello is not defined
+
+//Let- The variable is temporarily defined in the block.
+
+let greeting = "Hi";
+    if (true) {
+        let greeting = "Hey";
+        console.log(greeting); // "Hey"
+    }
+    console.log(greeting); // "Hi"
+
+//Const - If a variable has to be defined universally in the block itself it is then used. 
+const greeting = {
+    message: "say Hi",
+    times: 4
+}
+greeting.message = "say Hello instead";
+
+
+<!-- Answer 3 -->
+
+//1) Numbers- A numerical value thats assigned to a variabe .
+//2) BigInt- A large integer that is representated by the exponetial factor .
+//3) String- Any quotes that can be expreesed in a variable .
+//4) Boolean- Any opertation that requires a logical true/false interpretation.
+//5) null- Any variable that has been defined to have no data. 
+//6) undefined- Any variable that hasnt been defined. 
