@@ -1,0 +1,43 @@
+<html>
+<head>
+<h1> Assignemnt day 2 </h1>
+<h3> Check Console</h3>
+<body>
+<script> var a = prompt("Enter an Input"); 
+    console.log(a); ;</script>
+</body>
+</head>
+</html>
+
+
+<!-- Question 2 -->
+
+<!-- // String methods are- 
+var sln = txt.length 
+var pos = str.indexOf("X")
+var pos = str.lastIndexOf("A")
+var pos = str.indexOf("X", 25)
+var pos = str.search("X")
+var res = str.slice(3, 10)
+var res = str.substr(2, 16)
+var n = str.replace("X", "Y")
+var A= X.toUpperCase()
+textX.concat(" ", textA)
+alert(str.trim())
+str.charAt(3) -->
+
+<!-- Array Methods are
+
+X.toString()
+X.join(" * ")
+X.pop()
+X.push("")
+X.shift()
+X.unshift("")
+X[]
+delete X[]
+X.splice()
+X.concat(Y)
+fruits.toString()
+ -->
+
