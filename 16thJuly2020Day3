@@ -1,0 +1,89 @@
+<!-- Question 1 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 1</title>
+</head>
+<body>
+    <script>
+       var num = prompt("Enter an Input");
+        document.write("Number = "+num+"<br>");
+        if(num % 2 == 0) {
+           document.write('Number is even!');
+           console.log( num+"_Is Even" );
+        } else {
+           document.write('Number is odd!');
+           console.log( num+"_Is odd");
+        }
+        
+    </script>
+
+</body>
+</html>
+
+<!-- Question 2 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 2</title>
+</head>
+<body>
+  <h2>Check the Console !</h2>  
+  <script>var a = prompt("Enter the name of the OS");
+          var b = prompt("Enter the software version");
+          console.log( "The OS Name is "  +a+ " The Version is " +b); 
+ </script>  
+</body>
+</html>
+
+<!-- Question 3 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 3</title>
+</head>
+<body>
+    <script>
+        
+      var msg = 'enter the percentage of student:';
+    
+      var a = prompt(msg);
+      if(a>85)
+        
+            document.write('Marks are '+a+' and Grade is A');
+      else if(a<=85 && a>80)
+          
+            document.write('Marks are '+a+' and Grade is A');
+      else if(a>70 && a<=80)
+         
+            document.write('Marks are '+a+' and Grade is B');
+      else if(a>60 && a<=70)
+          
+            document.write('Marks are '+a+' and Grade is C');
+      else if(a>40 && a<=60)
+          
+            document.write('Marks are '+a+' and Grade is E');
+      else if(a<=40)
+         
+            if(a<=35)
+              {
+                document.write('Marks are '+a+' and Grade is F');}
+            else
+              {document.write('Marks are '+a+' and Grade is F');}
+      </script>
+</body>
+</html>
+
+
+
+
+
