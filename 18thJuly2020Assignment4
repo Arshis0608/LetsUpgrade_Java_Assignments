@@ -1,0 +1,83 @@
+// Question 1
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Question 1</title>
+</head>
+<body>
+<script>
+for ( var i = 1; i <= 100; i++ )
+      {
+        if ( i%3 === 0 && i%5 === 0 )
+        {
+          document.write( i + " FizzBuzz " );
+          console.log(i + " FizzBuzz ");
+        } 
+        else if ( i%3 === 0 ) 
+        {
+          document.write(i+ " Fizz " );
+          console.log(i + " Fizz ");
+        } 
+        else if ( i%5 === 0 ) 
+        {
+            document.write(i+ " Buzz " );
+            console.log(i + " Buzz ")
+        }  
+        else
+        {
+            document.write(i);
+            console.log(i);
+        }
+      }
+</script>   
+</body>
+</html>
+
+//Question 2
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Question 2</title>
+</head>
+<body>
+<script>
+ const Student = { 
+       name = "Helsinki",
+       age = 24,
+       { projects : "Two Player Dice Game using JavaScript"  } } 
+
+//  I am not sure what to do with this question ?
+</script>   
+</body>
+</html>
+
+//Question 3
+
+<!DOCTYPE html>
+<html>
+<head> Question 3 </head>
+            <div id="myDIV" class="header">
+            <h2>My To Do List</h2>
+            <input type="text" id="myInput" placeholder="Title...">
+            <span onclick="newElement()" class="addBtn">Add</span>
+          </div>
+          
+          <ul id="myUL">
+            <li>Mlik</li>
+            <li class="checked">Eggs</li>
+            <li>Bananas</li>
+            <li>Oranges</li>
+            <li>Cheese</li>
+            <li>Choclates</li>
+          </ul>
+
+</body>
+</html>
+
+
