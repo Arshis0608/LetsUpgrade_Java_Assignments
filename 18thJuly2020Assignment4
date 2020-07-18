@@ -80,6 +80,96 @@ for ( var i = 1; i <= 100; i++ )
 </body>
 </html>
 
+<!-- Question 4 -->
+
+<html> 
+   <head> Question 4 </head>
+      <script> 
+         
+         function dis(val) 
+         { 
+             document.getElementById("result").value+=val 
+         } 
+           
+         
+         function solve() 
+         { 
+             let x = document.getElementById("result").value 
+             let y = eval(x) 
+             document.getElementById("result").value = y 
+         } 
+           
+      
+         function clr() 
+         { 
+             document.getElementById("result").value = "" 
+         } 
+      </script> 
+     
+      <style> 
+         .title{ 
+         margin-bottom: 10px; 
+         text-align:center; 
+         width: 210px; 
+         color:rgb(128, 98, 0); 
+         border: solid black 2px; 
+         } 
+  
+         input[type="button"] 
+         { 
+         background-color:purple; 
+         color: white; 
+         border: solid black 2px; 
+         width:100% 
+         } 
+  
+         input[type="text"] 
+         { 
+         background-color:white; 
+         border: solid black 2px; 
+         width:100% 
+         } 
+      </style> 
+   </head> 
+
+   <body> 
+      <div class = title >BASIC CALCULATOR</div> 
+      <table border="1"> 
+         <tr> 
+            <td colspan="3"><input type="text" id="result"/></td> 
+
+            <td><input type="button" value="c" onclick="clr()"/> </td> 
+         </tr> 
+         <tr> 
+    
+            <td><input type="button" value="1" onclick="dis('1')"/> </td> 
+            <td><input type="button" value="2" onclick="dis('2')"/> </td> 
+            <td><input type="button" value="3" onclick="dis('3')"/> </td> 
+            <td><input type="button" value="/" onclick="dis('/')"/> </td> 
+         </tr> 
+         <tr> 
+            <td><input type="button" value="4" onclick="dis('4')"/> </td> 
+            <td><input type="button" value="5" onclick="dis('5')"/> </td> 
+            <td><input type="button" value="6" onclick="dis('6')"/> </td> 
+            <td><input type="button" value="-" onclick="dis('-')"/> </td> 
+         </tr> 
+         <tr> 
+            <td><input type="button" value="7" onclick="dis('7')"/> </td> 
+            <td><input type="button" value="8" onclick="dis('8')"/> </td> 
+            <td><input type="button" value="9" onclick="dis('9')"/> </td> 
+            <td><input type="button" value="+" onclick="dis('+')"/> </td> 
+         </tr> 
+         <tr> 
+            <td><input type="button" value="." onclick="dis('.')"/> </td> 
+            <td><input type="button" value="0" onclick="dis('0')"/> </td> 
+    
+            <td><input type="button" value="=" onclick="solve()"/> </td> 
+            <td><input type="button" value="*" onclick="dis('*')"/> </td> 
+         </tr> 
+      </table> 
+   </body> 
+</html> 
+
 
 <!-- Question 5 -->
 
@@ -101,13 +191,13 @@ for ( var i = 1; i <= 100; i++ )
             document.write("Commision earned is " +(a*.02));
       else if(a<=10000 && a>=5001)
           
-            document.write("Commision earned is " +(a*.05)); 
+            document.write("Commision earned is " +((a*.02) + (a*.05))); 
       else if(a<=20000 && a>=10001)
          
-            document.write("Commision earned is " +(a*.07));
-      else if(a>=10001)
+            document.write("Commision earned is " +(a*.02 + (a*.05) + a*.07));
+      else if(a>=20001)
           
-            document.write("Commision earned is "+(a*.10));
+            document.write("Commision earned is "+((a*.10)+ a*.02+(a*.05) + a*.07));
 
       </script>
 </body>
@@ -174,3 +264,28 @@ if(num>100)
 </body>
 </html>
 
+<!-- Question 8 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Question 8</title>
+</head>
+<body>
+<script>
+ 
+ function ask(question, yes, no) {
+   if  (confirm(question)) yes()
+   else no();
+
+ask(
+  "Do you agree?",
+  function(){alert("You agreed.");},
+  function(){alert("You cancelled the execution");} //I`m not sure what to do after this ?
+);
+ }
+</script>
+</body>
+</html>
