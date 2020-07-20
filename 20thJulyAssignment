@@ -1,0 +1,72 @@
+<!-- Question 1 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Find Even numbers in Array using JavaScript</title>
+</head>
+<body>
+    <p>
+        Using for loop to get even numbers in an Array.
+    </p>
+</body> 
+<script>
+    function getNumbers() {
+        var arr = [1, 2, 3, 4, 5, 6];
+
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i] % 2 === 1) {
+                document.writeln(arr[i]);
+            }
+        }
+    }
+
+    getNumbers()//Am not sure how to Cube it 
+
+
+</script>
+</html>
+
+<!-- Question 2 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <script>
+class X {
+  constructor() {
+    this.name = 
+  }
+  present() {
+    return this.name;
+  }
+}
+
+myNAME = new X(""")
+document.getElementById("demo").innerHTML = myNAME.present();
+
+   </script>//What to assign variables to ?
+</body>
+</html>
+
+
+
+<!-- Question 3 -->
+//.js file
+
+export async function http(
+  request: RequestInfo
+): Promise <any> {
+  const response = await fetch(request);
+  const body = await response.json();
+  return body;
+}
+
+// example consuming code
+const data = await http(
+  "https://jsonplaceholder.typicode.com/todos"
