@@ -1,0 +1,103 @@
+<!-- Question 1-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Question 1</title>
+</head>
+<body>
+  <script type="text/javascript">
+    var c = ["blue", "black", "yellow", "red","green","violet","gold","silver"];
+    var currentColorIndex = 0;
+  
+    function changeColor() {
+      document.bgColor = c[currentColorIndex];
+      currentColorIndex = (currentColorIndex + 1) % c.length;
+      setTimeout(changeColor, 5000);
+    }
+  
+  </script>
+  
+  <body onload="changeColor()">
+  </body>
+</body>
+</html>
+
+
+<!-- Question 2 -->
+
+
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <title>Question 2</title>
+    <script>
+        function fiveTimesTable() {
+  var display = ""; 
+
+  for (i = 1; i <= 12; i++) {
+     var multiplier = 5;
+     var result = i*5;
+
+     display += multiplier+" * "+i+" = "+result+"<br>"; //Add each line to our output HTML
+  }
+
+  document.getElementById("outputDiv").innerHTML = display;
+}
+</script>
+</head>
+<body>
+    <h2>Press the button to display the table.</h2>
+    <button type="button" onclick="fiveTimesTable()">Check the Output </button>
+    <div id="outputDiv"></div>
+</body>
+</html>
+
+<!-- Question 3 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<script>var person = prompt("Please enter your name",);
+
+    if (person != null) {
+      document.getElementById("demo").innerHTML =
+      "Hello " + person + "! Welcome";
+    }</script>
+<script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
+<script>button.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+    localStorage.setItem('theme', document.body.classList.contains('dark') ? 'dark' : 'light');
+});
+
+if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add('dark');
+}</script>
+</head>
+
+<body onload="startTime()" "Weclome to the Website">
+<p1>Welcome to the Website</p1>
+<div id="txt"></div>
+
+</body>
+</html>
